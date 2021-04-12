@@ -1,0 +1,20 @@
+ALGORITHM algorithm_SENTENCE
+VAR
+ S: STRING ;
+ i,j,l,k:INTEGER;
+ k:=1;
+
+BEGIN
+FOR i FROM 0 TO S.length STEP 1  DO
+ IF (S[S.length(i)]=".")) THEN
+ Read (S)
+l:=S.length;
+IF (S[i]=" ") THEN
+     k:=k+1;
+END_IF
+
+IF  ((S[i]="o") or (S[i]="u") or (S[i]="i") or (S[i]="y") or (S[i]="a") or (S[i]="e")) THEN
+j:=j+1;
+END_IF
+END_FOR
+END
